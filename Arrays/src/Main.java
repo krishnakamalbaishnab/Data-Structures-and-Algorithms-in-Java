@@ -10,6 +10,12 @@ public class Main {
         System.out.println(Arrays.toString(numbers)); // Arrays is method in java from the package java.util
         //what is line of code is doing is that , Arrays toString is converting the object to string and then printing o the console. It will print 0 , 0, 0
         //now if we want to print or store different value to the arrays how we can do is that *GO TO LINE NUMBER 6*
+        // shorthand of declaring and initialising an array
 
+        int[]  numbers2 = {40,50,60}; //short syntax of declaring an array in Java
+        System.out.println(Arrays.toString(numbers2));
+
+        //printing the size of the array
+        System.out.println(numbers2.length);
     }
 }
