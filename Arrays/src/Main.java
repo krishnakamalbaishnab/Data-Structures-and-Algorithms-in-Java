@@ -24,7 +24,10 @@ public class Main {
         number.insert(300);
         number.insert(400);
 
-        number.removeAt(3);
+        number.removeAt(3); //deleting array item from the index value of 3
+
+        System.out.println(number.indexOf(300)); //printing the index of array items 300
+
         number.print();
 
     }

@@ -20,7 +20,7 @@ public class Array {
             //setting "items" to this new array
             items = newItems;
         }
-        items[count++]= item;
+        items[count++]= item; // storing it to the new items
     }
 
     //deleting an item from an array
@@ -36,7 +36,17 @@ public class Array {
 
     count --;
     }
-    // Method to print the elements of the array
+
+    //searching in a array index
+    public int indexOf(int item){
+        //if we find it return index
+        for (int i =0; i< count; i++)
+            if(items[i]== item)
+                return i;
+        //otherwise return -1
+    return -1;
+    }
+    //Method to print the elements of the array
     public void print() {
         // Iterate through the array and print each element
         for (int i = 0; i < count; i++)
